@@ -23,3 +23,8 @@ ln -s ${BASEDIR}/nvim/autoload/onedark.vim ~/.config/nvim/autoload/onedark.vim
 echo "linking zsh config..."
 ln -s ${BASEDIR}/zsh/zshrc ~/.zshrc
 ln -s ${BASEDIR}/zsh/custom/themes/axis7818.zsh-theme ~/.oh-my-zsh/custom/themes/axis7818.zsh-theme
+
+# virtualenvs
+echo "linking virtualenv scripts"
+ln -s ${BASEDIR}/virtualenvs/postactivate ~/.virtualenvs/postactivate
+ln -s ${BASEDIR}/virtualenvs/postdeactivate ~/.virtualenvs/postdeactivate
