@@ -2,7 +2,7 @@
 " | Settings                                                                                       |
 " +------------------------------------------------------------------------------------------------+
 colorscheme one
-set background=light
+set background=dark
 set termguicolors
 set encoding=utf8
 set updatetime=200
