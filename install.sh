@@ -18,6 +18,7 @@ mkdir -p ~/.config/nvim
 ln -s ${BASEDIR}/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ${BASEDIR}/nvim/colors/onedark.vim ~/.config/nvim/colors/onedark.vim
 ln -s ${BASEDIR}/nvim/autoload/onedark.vim ~/.config/nvim/autoload/onedark.vim
+ln -s ${BASEDIR}/nvim/colors/one.vim ~/.config/nvim/colors/one.vim
 
 # zsh
 echo "linking zsh config..."

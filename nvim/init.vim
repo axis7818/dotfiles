@@ -1,7 +1,8 @@
 " +------------------------------------------------------------------------------------------------+
 " | Settings                                                                                       |
 " +------------------------------------------------------------------------------------------------+
-colorscheme onedark
+colorscheme one
+set background=light
 set termguicolors
 set encoding=utf8
 set updatetime=200
@@ -71,7 +72,7 @@ let NERDTreeRespectWildIgnore=1
 let g:NERDTreeIgnore = ['^bin$', '^obj$']
 " sync open file with NERDTree
 " Check if NERDTree is open or active
-function! IsNERDTreeOpen()        
+function! IsNERDTreeOpen()
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
