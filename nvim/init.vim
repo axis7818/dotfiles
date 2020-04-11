@@ -66,7 +66,7 @@ Plug 'preservim/nerdtree'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
-let NERDTreeWinPos="left"
+let NERDTreeWinPos="right"
 let NERDTreeMinimalUI=1
 let NERDTreeRespectWildIgnore=1
 let g:NERDTreeIgnore = ['^bin$', '^obj$']
