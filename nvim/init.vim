@@ -1,9 +1,17 @@
 " +------------------------------------------------------------------------------------------------+
 " | Settings                                                                                       |
 " +------------------------------------------------------------------------------------------------+
-colorscheme one
-set background=dark
 set termguicolors
+colorscheme one
+
+" light theme
+set background=light
+let g:airline_theme='sol'
+
+" dark theme
+" set background=dark
+" let g:airline_theme='onedark'
+
 set encoding=utf8
 set updatetime=200
 set exrc " allow per-project configuration
@@ -103,7 +111,6 @@ set maxmempattern=2000000
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='onedark'
 
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
