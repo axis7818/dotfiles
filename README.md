@@ -19,3 +19,4 @@ VSCode is my primary editor. I use the [Settings Sync](https://marketplace.visua
 plugin to manage my settings in a [public github gist](https://gist.github.com/axis7818/a788156fdb37f22bb546a6707f75d142#file-settings-json).
 
 ![vscode-preview](./images/vscode-preview.png)
+

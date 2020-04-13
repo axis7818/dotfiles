@@ -13,7 +13,7 @@ let g:airline_theme='sol'
 " let g:airline_theme='onedark'
 
 set encoding=utf8
-set updatetime=200
+set updatetime=1000
 set exrc " allow per-project configuration
 
 set relativenumber
@@ -57,6 +57,8 @@ let g:elite_mode=1
 "     nnoremap <Left>  :vertical resize -1<CR>
 "     nnoremap <Right> :vertical resize +1<CR>
 " endif
+"
+set path+=**
 
 " +------------------------------------------------------------------------------------------------+
 " | Key Mappings                                                                                   |
@@ -69,6 +71,8 @@ map <C-p> 'CtrlP'
 " | Initialize Plugins                                                                             |
 " +------------------------------------------------------------------------------------------------+
 call plug#begin()
+
+Plug 'tpope/vim-surround'
 
 Plug 'preservim/nerdtree'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -128,11 +132,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " \ 'coc-snippets',
 let g:coc_global_extensions = [
   \ 'coc-markdownlint',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-eslint',
   \ 'coc-tslint',
-  \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-omnisharp'
   \ ]
