@@ -17,6 +17,7 @@ set updatetime=1000
 set exrc " allow per-project configuration
 
 set relativenumber
+set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 set hlsearch
 nnoremap <C-n> :nohl<cr>
@@ -27,8 +28,10 @@ set nowrap
 set autoindent
 set tabstop=3
 set shiftwidth=3
+
+" Show whitespace characters
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
-set list
+" set list 
 
 set wildignore=*.o,*~,*.pyc,*/node_modules/*,*/.git/*,*.DS_Store,*.min.*,*.swp,*/bin/*,*/obj/*
 
@@ -40,7 +43,7 @@ set showtabline=2
 set splitright
 set splitbelow
 
-" Navigate Splits with hjkl
+" Navigate Splits with ctrl-[hjkl]
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -51,13 +54,13 @@ let g:elite_mode=1
 
 " Disabled since this clashes with navigating coc's goto definition when there
 " are multiple definitions
-" if get(g:, 'elite_mode')
-"     nnoremap <Up>    :resize +1<CR>
-"     nnoremap <Down>  :resize -1<CR>
-"     nnoremap <Left>  :vertical resize -1<CR>
-"     nnoremap <Right> :vertical resize +1<CR>
-" endif
-"
+if get(g:, 'elite_mode')
+    nnoremap <S-Up>    :resize +1<CR>
+    nnoremap <S-Down>  :resize -1<CR>
+    nnoremap <S-Left>  :vertical resize -1<CR>
+    nnoremap <S-Right> :vertical resize +1<CR>
+endif
+
 set path+=**
 
 " +------------------------------------------------------------------------------------------------+
@@ -174,8 +177,8 @@ else
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> g[ <Plug>(coc-diagnostic-prev)
+nmap <silent> g] <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
