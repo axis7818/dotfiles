@@ -5,12 +5,12 @@ set termguicolors
 colorscheme one
 
 " light theme
-set background=light
-let g:airline_theme='sol'
+" set background=light
+" let g:airline_theme='sol'
 
 " dark theme
-" set background=dark
-" let g:airline_theme='onedark'
+set background=dark
+let g:airline_theme='onedark'
 
 set encoding=utf8
 set updatetime=1000
@@ -97,6 +97,7 @@ function! SyncTree()
 endfunction
 " Highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
+nmap <leader>nt :NERDTreeToggle<CR>
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
