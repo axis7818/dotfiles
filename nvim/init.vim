@@ -5,12 +5,12 @@ set termguicolors
 colorscheme one
 
 " light theme
-" set background=light
-" let g:airline_theme='sol'
+set background=light
+let g:airline_theme='sol'
 
 " dark theme
-set background=dark
-let g:airline_theme='onedark'
+" set background=dark
+" let g:airline_theme='onedark'
 
 set encoding=utf8
 set updatetime=1000
@@ -64,13 +64,6 @@ endif
 set path+=**
 
 " +------------------------------------------------------------------------------------------------+
-" | Key Mappings                                                                                   |
-" +------------------------------------------------------------------------------------------------+
-
-" Easy CtrlP plugin use
-map <C-p> 'CtrlP'
-
-" +------------------------------------------------------------------------------------------------+
 " | Initialize Plugins                                                                             |
 " +------------------------------------------------------------------------------------------------+
 call plug#begin()
@@ -78,29 +71,34 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 
 Plug 'preservim/nerdtree'
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-autocmd vimenter * NERDTree
-autocmd vimenter * wincmd p
 let NERDTreeWinPos="right"
 let NERDTreeMinimalUI=1
 let NERDTreeRespectWildIgnore=1
 let g:NERDTreeIgnore = ['^bin$', '^obj$']
+nmap <leader>nt :NERDTreeToggle<CR>
+
+" Quit if NERDTree is the only open buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Open NERDTree by default
+" autocmd vimenter * NERDTree
+" autocmd vimenter * wincmd p
+
 " sync open file with NERDTree
 " Check if NERDTree is open or active
-function! IsNERDTreeOpen()
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
-" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
-" file, and we're not in vimdiff
-function! SyncTree()
-  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-    NERDTreeFind
-    wincmd p
-  endif
-endfunction
-" Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
-nmap <leader>nt :NERDTreeToggle<CR>
+" function! IsNERDTreeOpen()
+"   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+" endfunction
+" " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+" " file, and we're not in vimdiff
+" function! SyncTree()
+"   if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+"     NERDTreeFind
+"     wincmd p
+"   endif
+" endfunction
+" " Highlight currently open buffer in NERDTree
+" autocmd BufEnter * call SyncTree()
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -112,9 +110,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'ctrlpvim/ctrlp.vim'
+map <C-p> 'CtrlP'
 " ignore .gitignored files
 let ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 1
 set maxmempattern=2000000
 
 Plug 'vim-airline/vim-airline'
