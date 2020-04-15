@@ -5,12 +5,12 @@ set termguicolors
 colorscheme one
 
 " light theme
-set background=light
-let g:airline_theme='sol'
+" set background=light
+" let g:airline_theme='sol'
 
 " dark theme
-" set background=dark
-" let g:airline_theme='onedark'
+set background=dark
+let g:airline_theme='onedark'
 
 set encoding=utf8
 set updatetime=1000
@@ -30,8 +30,8 @@ set tabstop=3
 set shiftwidth=3
 
 " Show whitespace characters
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
-" set list 
+set listchars=eol:¬,tab:>·,trail:~,space:·
+set list
 
 set wildignore=*.o,*~,*.pyc,*/node_modules/*,*/.git/*,*.DS_Store,*.min.*,*.swp,*/bin/*,*/obj/*
 
@@ -133,6 +133,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " \ 'coc-snippets',
 let g:coc_global_extensions = [
+  \ 'coc-yaml',
   \ 'coc-markdownlint',
   \ 'coc-tsserver',
   \ 'coc-tslint',
