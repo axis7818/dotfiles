@@ -9,14 +9,14 @@ collapsed_wd() {
 
 function git_info() {
    check_git=$(command git rev-parse --is-inside-work-tree 2> /dev/null) || return 0
-   echo "─[ $(git_prompt_info)$(git_prompt_status) $FG[008]]"
+   echo "─[ $(git_prompt_info)$(git_prompt_status) $FG[default]]"
 }
 
 local user_color='blue'; [ $UID -eq 0 ] && user_color='red'
 local wd_color='green'
-local date_time="%{$fg[default]%}%*%{$reset_color%} $FG[008]]"
+local date_time="%{$fg[default]%}%*%{$reset_color%} $FG[default]]"
 local user="%{$fg_bold[$user_color]%}%n %{$fg[$wd_color]%}"
-local post_wd="$reset_color$FG[008] ]"
+local post_wd="$reset_color$FG[default] ]"
 
 local prompt_line="└─%(!.#.➤)%{$reset_color%}  "
 
@@ -25,7 +25,7 @@ local return_status="%{$fg_bold[red]%}%(?..└─➤  %?
 
 # Set Prompt
 PROMPT='${return_status}
-$FG[008]┌─[ ${user}$(collapsed_wd)${post_wd}$(git_info)
+$FG[default]┌─[ ${user}$(collapsed_wd)${post_wd}$(git_info)
 ${prompt_line}'
 PROMPT2="%{$fg[red]%}\ %{$reset_color%}"
 RPROMPT='%{$reset_color%}'
