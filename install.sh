@@ -12,6 +12,10 @@ ln -s ${BASEDIR}/git/gitconfig ~/.gitconfig
 echo "linking tmux config..."
 ln -s ${BASEDIR}/tmux/tmux.conf ~/.tmux.conf
 
+# hyper
+echo "linking hyper config..."
+ln -s ${BASEDIR}/hyper/hyper.js ~/.hyper.js
+
 # nvim (make sure neovim is installed)
 echo "linking neovim config..."
 mkdir -p ~/.config/nvim
