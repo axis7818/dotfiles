@@ -22,7 +22,7 @@ set shiftwidth=3
 
 " Show whitespace characters
 set listchars=eol:¬,tab:>·,trail:~,space:·
-set list
+" set list
 
 set wildignore=*.o,*~,*.pyc,*/node_modules/*,*/.git/*,*.DS_Store,*.min.*,*.swp,*/bin/*,*/obj/*
 
