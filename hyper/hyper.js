@@ -143,7 +143,7 @@ module.exports = {
     // Plugins
     hyperBorder: {
       borderColors: ['#8BE9FD', '#50FA7B'],
-      borderWidth: '2px',
+      borderWidth: '3px',
     },
   },
 
