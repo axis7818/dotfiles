@@ -13,7 +13,6 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 set hlsearch
 nnoremap <C-n> :nohl<cr>
 syntax on
-set mouse=a
 set nowrap
 
 set autoindent
