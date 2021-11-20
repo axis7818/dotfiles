@@ -15,3 +15,5 @@
 [pager]
     branch = false
 
+[core]
+	editor = vim
