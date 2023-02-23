@@ -1,0 +1,11 @@
+:set relativenumber
+:set number
+:set scrolloff=5
+:set incsearch
+
+nmap gd :action GotoDeclaration<CR>
+nmap gi :action GotoImplementation<CR>
+nmap gr :action FindUsages<CR>
+nmap gc :action RenameElement<CR>
+nmap ge :action GotoNextError<CR>
+
