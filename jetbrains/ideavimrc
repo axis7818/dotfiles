@@ -1,5 +1,7 @@
 :set relativenumber
 :set number
+:set scrolloff=5
+:set incsearch
 
 nmap gd :action GotoDeclaration<CR>
 nmap gi :action GotoImplementation<CR>
