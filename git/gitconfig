@@ -16,4 +16,17 @@
     branch = false
 
 [core]
-	editor = vim
+	editor = nvim
+
+[pull]
+	ff = only
+
+[includeIf "gitdir:~/Repos/bitbucket.org/worldspinner/"]
+  path = ~/Repos/bitbucket.org/worldspinner/.gitconfig
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
