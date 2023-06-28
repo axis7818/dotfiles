@@ -21,10 +21,9 @@
 [pull]
 	rebase = false
 
-[includeIf "gitdir:~/Repos/bitbucket.org/worldspinner/"]
-  path = ~/Repos/bitbucket.org/worldspinner/.gitconfig
 [init]
 	defaultBranch = main
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
