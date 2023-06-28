@@ -19,7 +19,7 @@
 	editor = nvim
 
 [pull]
-	ff = only
+	rebase = false
 
 [includeIf "gitdir:~/Repos/bitbucket.org/worldspinner/"]
   path = ~/Repos/bitbucket.org/worldspinner/.gitconfig
