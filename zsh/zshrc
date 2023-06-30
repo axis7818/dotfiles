@@ -100,23 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # vim -> nvim
 alias vim=nvim
 
-# Node Version Manager
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# Alias lazygit to lg and change directory on exit
+# https://github.com/jesseduffield/lazygit#changing-directory-on-exit
+lg()
+{
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
 
-# jenv
-eval "$(jenv init -)"
+    lazygit "$@"
 
-# lazygit
-alias lg='lazygit'
-
-# # pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/shims:$PATH"
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-# 
-# # python virtualenv wrapper
-# source $(dirname $(pyenv which python))/virtualenvwrapper.sh
-# 
-# # worldspinner mysql
-# export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+    fi
+}

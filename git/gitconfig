@@ -1,6 +1,6 @@
-[user]
-    email = axis7818@gmail.com
-    name = Cameron Taylor
+# [user]
+#     email = <name@email.com>
+#     name = <FIRST LAST>
 
 [alias]
     lg = !git lg1
@@ -16,7 +16,7 @@
     branch = false
 
 [core]
-	editor = nvim
+	editor = vim
 
 [pull]
 	rebase = false
