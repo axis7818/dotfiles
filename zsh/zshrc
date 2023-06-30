@@ -97,9 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# vim -> nvim
-alias vim=nvim
-
 # Alias lazygit to lg and change directory on exit
 # https://github.com/jesseduffield/lazygit#changing-directory-on-exit
 lg()

@@ -46,31 +46,5 @@ endif
 
 set path+=**
 
-" +------------------------------------------------------------------------------------------------+
-" | Initialize Plugins                                                                             |
-" +------------------------------------------------------------------------------------------------+
-call plug#begin()
-
-Plug 'tpope/vim-surround'
-
-Plug 'preservim/nerdtree'
-let NERDTreeWinPos="right"
-let NERDTreeMinimalUI=1
-let NERDTreeRespectWildIgnore=1
-let g:NERDTreeIgnore = ['^bin$', '^obj$']
-nmap <leader>nt :NERDTreeToggle<CR>
-
-" Quit if NERDTree is the only open buffer
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-Plug 'tpope/vim-sleuth'
-
-Plug 'christoomey/vim-tmux-navigator'
-
-call plug#end()
-
 set secure " disable unsafe commands from project specific .vimrc files (unless owned by me)
 
