@@ -18,7 +18,7 @@ local date_time="%{$fg[default]%}%*%{$reset_color%} $FG[default]]"
 local user="%{$fg_bold[$user_color]%}%n %{$fg[$wd_color]%}"
 local post_wd="$reset_color$FG[default] "
 
-local prompt_line="%(!.#.»)%{$reset_color%} "
+local prompt_line="%{$fg_bold[magenta]%}%(!.#.❱)%{$reset_color%} "
 
 local return_status="%{$fg_bold[red]%}%(?..%?
 )%{$reset_color%}"
