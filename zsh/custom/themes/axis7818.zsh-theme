@@ -30,7 +30,7 @@ PROMPT='${return_status}
 $FG[default]${user}${pwd}${post_wd}$(git_info)
 ${prompt_line}'
 PROMPT2="%{$fg[red]%}\ %{$reset_color%}"
-RPROMPT='%{$reset_color%}'
+RPROMPT='%*%{$reset_color%}'
 
 # Git Fields
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}"
