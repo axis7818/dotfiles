@@ -1,25 +1,5 @@
-collapsed_wd() {
-  echo $(pwd | perl -pe '
-   BEGIN {
-      binmode STDIN,  ":encoding(UTF-8)";
-      binmode STDOUT, ":encoding(UTF-8)";
-   }; s|^$ENV{HOME}|~|g; s|/([^/.])[^/]*(?=/)|/$1|g; s|/\.([^/])[^/]*(?=/)|/.$1|g
-')
-}
-
-function _virtualenv_prompt_info {
-   if [[ -n "$(whence virtualenv_prompt_info)" ]]; then
-      if [ -n "$(whence pyenv_prompt_info)" ]; then
-         if [ "$1" = "inline" ]; then
-            ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX=%{$fg[blue]%}"::%{$fg[red]%}"
-            ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX=""
-            virtualenv_prompt_info
-         fi
-         [ "$(pyenv_prompt_info)" = "${PYENV_PROMPT_DEFAULT_VERSION}" ] && virtualenv_prompt_info
-      else
-         virtualenv_prompt_info
-      fi
-   fi
+function virtualenv_info { 
+	[ $VIRTUAL_ENV ] && echo `basename $VIRTUAL_ENV`' '
 }
 
 function git_info() {
@@ -42,10 +22,10 @@ local pwd='%~'
 
 # Set Prompt
 PROMPT='${return_status}
-$FG[default]${user}${pwd}${post_wd}$(git_info)
+$FG[default]${user}${pwd}${post_wd}%{$fg_bold[yellow]%}$(virtualenv_info)$(git_info)
 ${prompt_line}'
 PROMPT2="%{$fg[red]%}\ %{$reset_color%}"
-RPROMPT='$(_virtualenv_prompt_info) %*%{$reset_color%}'
+RPROMPT='%*%{$reset_color%}'
 
 # Git Fields
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}"
