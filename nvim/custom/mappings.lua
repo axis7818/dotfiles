@@ -18,4 +18,10 @@ M.general = {
   },
 }
 
+M.nvimtree = {
+  n = {
+    ["<C-\\>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+  }
+}
+
 return M
