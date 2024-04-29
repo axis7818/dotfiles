@@ -11,22 +11,22 @@ function git_info() {
 local user_color='blue'; [ $UID -eq 0 ] && user_color='red'
 local wd_color='green'
 local date_time="%{$fg[default]%}%*%{$reset_color%} $FG[default]]"
-local user="%{$fg_bold[$user_color]%}%n %{$fg[$wd_color]%}"
-local post_wd="$reset_color$FG[default] "
+local user="%{$fg_bold[$user_color]%}%n"
+local post_wd="$reset_color$FG[default]"
 
 local prompt_line="%{$fg_bold[magenta]%}%(!.#.❱)%{$reset_color%} "
 
 local return_status="%{$fg_bold[red]%}%(?..%?
 )%{$reset_color%}"
 
-local pwd='%~'
+local pwd="%{$fg[$wd_color]%}%~"
 
 # Set Prompt
 PROMPT='${return_status}
-$FG[default]${user}${pwd}${post_wd}%{$fg_bold[yellow]%}$(virtualenv_info)$(git_info)
+$FG[default]${pwd}${post_wd} %{$fg_bold[yellow]%}$(virtualenv_info)$(git_info)
 ${prompt_line}'
 PROMPT2="%{$fg[red]%}\ %{$reset_color%}"
-RPROMPT='%*%{$reset_color%}'
+RPROMPT='' # '%*%{$reset_color%}'
 
 # Git Fields
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}"
