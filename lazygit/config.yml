@@ -1,0 +1,10 @@
+gui:
+  showBottomLine: false
+  showCommandLog: false
+  # expandFocusedSidePanel: true
+  showPanelJumps: false
+  # One of 'rounded' (default) | 'single' | 'double' | 'hidden'
+  border: rounded
+
+  # If true, show the number of lines changed per file in the Files view
+  showNumstatInFilesView: true
