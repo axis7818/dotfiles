@@ -1,10 +1,19 @@
+# For all options, see:
+#
+#   Config          : https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+#   Custom Commands : https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md
+#
+
 gui:
   showBottomLine: false
   showCommandLog: false
-  # expandFocusedSidePanel: true
   showPanelJumps: false
-  # One of 'rounded' (default) | 'single' | 'double' | 'hidden'
   border: rounded
-
-  # If true, show the number of lines changed per file in the Files view
   showNumstatInFilesView: true
+
+customCommands:
+- key: 'U'
+  command: 'git submodule update --init --recursive'
+  context: 'files, localBranches, status'
+  description: 'Update submodules'
+  stream: true
