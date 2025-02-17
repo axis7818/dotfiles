@@ -1,6 +1,11 @@
 name = "axis7818 mac dotfiles"
 description = "axis7818 dotfiles for mac"
 
+[vars.me]
+email = "axis7818@gmail.com"
+first_name = "Cameron"
+last_name = "Taylor"
+
 [[files]]
 template = "lazygit/config.yml"
 target = "~/Library/Application Support/lazygit/config.yml"
@@ -8,3 +13,8 @@ target = "~/Library/Application Support/lazygit/config.yml"
 [[files]]
 template = "zsh/custom/themes/axis7818.zsh-theme"
 target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
+
+[[files]]
+template = "git/gitconfig"
+target = "~/.gitconfig"
+
