@@ -6,15 +6,33 @@ email = "axis7818@gmail.com"
 first_name = "Cameron"
 last_name = "Taylor"
 
-[[files]]
-template = "lazygit/config.yml"
-target = "~/Library/Application Support/lazygit/config.yml"
+# ZSH
 
 [[files]]
 template = "zsh/custom/themes/axis7818.zsh-theme"
 target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
 
+# Git
+
 [[files]]
 template = "git/gitconfig"
 target = "~/.gitconfig"
+
+[[files]]
+template = "lazygit/config.yml"
+target = "~/Library/Application Support/lazygit/config.yml"
+
+# Tmux
+
+[[files]]
+template = "tmux/tmux.conf"
+target = "~/.tmux.conf"
+
+[[files]]
+template = "tmux/tmux-powerline/config.sh"
+target = "~/.config/tmux-powerline/config.sh"
+
+[[files]]
+template = "tmux/tmux-powerline/themes/axis7818.sh"
+target = "~/.config/tmux-powerline/themes/axis7818.sh"
 

@@ -219,7 +219,7 @@
 	# Song display format for mpd_simple. See mpc(1) for delimiters.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_SIMPLE_FORMAT="%artist% - %title%"
 	# Song display format for playerctl. see "Format Strings" in playerctl(1).
-	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLAYERCTL_FORMAT="{{ artist }} - {{ title }}"
+	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLAYERCTL_FORMAT="\{{ artist }} - \{{ title }}"
 	# Song display format for rhythmbox. see "FORMATS" in rhythmbox-client(1).
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_RHYTHMBOX_FORMAT="%aa - %tt"
 	
