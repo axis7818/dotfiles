@@ -28,11 +28,3 @@ target = "~/Library/Application Support/lazygit/config.yml"
 template = "tmux/tmux.conf"
 target = "~/.tmux.conf"
 
-[[files]]
-template = "tmux/tmux-powerline/config.sh"
-target = "~/.config/tmux-powerline/config.sh"
-
-[[files]]
-template = "tmux/tmux-powerline/themes/axis7818.sh"
-target = "~/.config/tmux-powerline/themes/axis7818.sh"
-
