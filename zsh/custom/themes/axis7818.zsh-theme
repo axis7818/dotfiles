@@ -1,5 +1,5 @@
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-function virtualenv_info { 
+function virtualenv_info {
 	[ $VIRTUAL_ENV ] && echo `basename $VIRTUAL_ENV`' '
 }
 
@@ -26,7 +26,7 @@ PROMPT='${return_status}
 $FG[default]${pwd}${post_wd} %{$fg_bold[yellow]%}$(virtualenv_info)$(git_info)
 ${prompt_line}'
 PROMPT2="%{$fg[red]%}\ %{$reset_color%}"
-RPROMPT='' # '%*%{$reset_color%}'
+RPROMPT=''
 
 # Git Fields
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}"

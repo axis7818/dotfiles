@@ -4,3 +4,7 @@ description = "axis7818 dotfiles for mac"
 [[files]]
 template = "lazygit/config.yml"
 target = "~/Library/Application Support/lazygit/config.yml"
+
+[[files]]
+template = "zsh/custom/themes/axis7818.zsh-theme"
+target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
