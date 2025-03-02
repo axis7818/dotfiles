@@ -87,7 +87,6 @@ lineHeight: 1
 letterSpacing: 0
 
 # Theme
-# Catppuccin Macchiato
 theme:
   background: "#24273a"
   foreground: "#cad3f5"
@@ -105,6 +104,6 @@ theme:
   brightGreen: "#8bd5ca"
   brightYellow: "#f4dbd6"
   brightBlue: "#7dc4e4"
-  brightMagenta: "#f0c6c6"
+  brightMagenta: "#f5bde6"
   brightCyan: "#91d7e3"
   brightWhite: "#cad3f5"
