@@ -20,7 +20,7 @@ cols: 100
 # Explicitly set the number of rows
 # or use `auto` to take the current
 # number of rows of your shell
-rows: 50
+rows: 32
 
 # Amount of times to repeat GIF
 # If value is -1, play once
@@ -103,7 +103,7 @@ theme:
   brightBlack: "#494d64"
   brightRed: "#ee99a0"
   brightGreen: "#8bd5ca"
-  brightYellow: "#f4dbd6"
+  brightYellow: "#eed49f"
   brightBlue: "#7dc4e4"
   brightMagenta: "#f5bde6"
   brightCyan: "#91d7e3"
