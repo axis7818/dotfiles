@@ -30,7 +30,8 @@ repeat: 0
 
 # Quality
 # 1 - 100
-quality: 100
+# Default to lower quality, final renders use higher qualities as needed
+quality: 20
 
 # Delay between frames in ms
 # If the value is `auto` use the actual recording delays
