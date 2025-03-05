@@ -1,30 +1,32 @@
 name = "axis7818 mac dotfiles"
 description = "axis7818 dotfiles for mac"
 
-[vars.me]
-email = "axis7818@gmail.com"
-first_name = "Cameron"
-last_name = "Taylor"
+[vars]
+me.first_name = "Cameron"
+me.last_name = "Taylor"
 
 # ZSH
-
+[[files]]
+template = "zsh/zshrc"
+target = "~/.zshrc"
+tags = ["shell"]
 [[files]]
 template = "zsh/custom/themes/axis7818.zsh-theme"
 target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
-
-# Git
-
-[[files]]
-template = "git/gitconfig"
-target = "~/.gitconfig"
-
-[[files]]
-template = "lazygit/config.yml"
-target = "~/Library/Application Support/lazygit/config.yml"
+tags = ["shell"]
 
 # Tmux
-
 [[files]]
 template = "tmux/tmux.conf"
 target = "~/.tmux.conf"
+tags = ["shell"]
 
+# Git
+[[files]]
+template = "git/gitconfig"
+target = "~/.gitconfig"
+tags = ["git"]
+[[files]]
+template = "lazygit/config.yml"
+target = "~/Library/Application Support/lazygit/config.yml"
+tags = ["git"]
