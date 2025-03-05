@@ -21,6 +21,12 @@ template = "tmux/tmux.conf"
 target = "~/.tmux.conf"
 tags = ["shell"]
 
+# iTerm
+[[files]]
+template = "iterm/switch_automatic.py"
+target = "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/switch_automatic.py"
+tags = ["terminal"]
+
 # Git
 [[files]]
 template = "git/gitconfig"
@@ -30,3 +36,13 @@ tags = ["git"]
 template = "lazygit/config.yml"
 target = "~/Library/Application Support/lazygit/config.yml"
 tags = ["git"]
+
+# Vim
+[[files]]
+template = "vim/vimrc"
+target = "~/.vimrc"
+tags = ["vim"]
+[[files]]
+template = "jetbrains/ideavimrc"
+target = "~/.ideavimrc"
+tags = ["vim"]

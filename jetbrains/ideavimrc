@@ -3,6 +3,7 @@
 :set number
 :set scrolloff=5
 
+" https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 nmap gd :action GotoDeclaration<CR>
 nmap gi :action GotoImplementation<CR>
 nmap gr :action FindUsages<CR>
