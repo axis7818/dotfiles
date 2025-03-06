@@ -1,6 +1,6 @@
-# [user]
-#     email = <name@email.com>
-#     name = <FIRST LAST>
+[user]
+    email = <{{ me.email }}>
+    name = <{{ me.first_name }} {{ me.last_name }}>
 
 [alias]
     lg = !git lg1
@@ -16,19 +16,19 @@
     branch = false
 
 [core]
-	editor = vim
+    editor = vim
 
 [pull]
-	rebase = false
+    rebase = false
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 
 [fetch]
-	prune = true
+    prune = true

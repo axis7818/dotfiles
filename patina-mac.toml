@@ -1,0 +1,48 @@
+name = "axis7818 mac dotfiles"
+description = "axis7818 dotfiles for mac"
+
+[vars]
+me.first_name = "Cameron"
+me.last_name = "Taylor"
+
+# ZSH
+[[files]]
+template = "zsh/zshrc"
+target = "~/.zshrc"
+tags = ["shell"]
+[[files]]
+template = "zsh/custom/themes/axis7818.zsh-theme"
+target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
+tags = ["shell"]
+
+# Tmux
+[[files]]
+template = "tmux/tmux.conf"
+target = "~/.tmux.conf"
+tags = ["shell"]
+
+# iTerm
+[[files]]
+template = "iterm/switch_automatic.py"
+target = "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/switch_automatic.py"
+tags = ["terminal"]
+
+# Git
+[[files]]
+template = "git/gitconfig"
+target = "~/.gitconfig"
+tags = ["git"]
+[[files]]
+template = "lazygit/config.yml"
+target = "~/Library/Application Support/lazygit/config.yml"
+tags = ["git"]
+
+# Vim
+[[files]]
+template = "vim/vimrc"
+target = "~/.vimrc"
+tags = ["vim"]
+[[files]]
+template = "jetbrains/ideavimrc"
+target = "~/.ideavimrc"
+tags = ["vim"]
