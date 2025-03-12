@@ -1,6 +1,6 @@
 [user]
-    email = <{{ me.email }}>
-    name = <{{ me.first_name }} {{ me.last_name }}>
+    email = <{{me.email}}>
+    name = <{{me.first_name}} {{me.last_name}}>
 
 [alias]
     lg = !git lg1
@@ -32,3 +32,7 @@
 
 [fetch]
     prune = true
+
+{{#if git.credentials}}
+{{git.credentials}}
+{{/if}}
