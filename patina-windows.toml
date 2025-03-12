@@ -1,0 +1,16 @@
+name = "axis7818 windows dotfiles"
+description = "axis7818 dotfiles for windows"
+
+[vars]
+me.first_name = "Cameron"
+me.last_name = "Taylor"
+
+# Git
+[[files]]
+template = "git\\gitconfig"
+target = "~\\.gitconfig"
+tags = ["git"]
+[[files]]
+template = "lazygit\\config.yml"
+target = "C:\\Users\\axis7\\AppData\\Roaming\\lazygit\\config.yml"
+tags = ["git"]
