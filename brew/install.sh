@@ -14,6 +14,7 @@ echo ""
 # install brew packages
 echo "Installing brew packages..."
 packages=(
+	"cocoapods"                        # iOS package management
 	"dive"                             # Docker image explorer
 	"fd"
 	"ffmpeg"
