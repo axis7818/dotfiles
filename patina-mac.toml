@@ -46,3 +46,9 @@ tags = ["vim"]
 template = "jetbrains/ideavimrc"
 target = "~/.ideavimrc"
 tags = ["vim"]
+
+# Zed
+[[files]]
+template = "zed/settings.json"
+target = "~/.config/zed/settings.json"
+tags = ["zed"]
