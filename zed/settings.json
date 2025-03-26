@@ -15,9 +15,9 @@
     "light": "Catppuccin Latte",
     "dark": "One Dark"
   },
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": "Material Icon Theme",
   // UI
-  "ui_font_size": 12,
+  "ui_font_size": 13,
   "ui_font_family": "Hack Nerd Font",
   "tabs": {
     "file_icons": true,
