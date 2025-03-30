@@ -52,3 +52,7 @@ tags = ["vim"]
 template = "zed/settings.json"
 target = "~/.config/zed/settings.json"
 tags = ["zed"]
+[[files]]
+template = "zed/keymap.json"
+target = "~/.config/zed/keymap.json"
+tags = ["zed"]
