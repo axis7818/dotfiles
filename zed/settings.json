@@ -10,10 +10,13 @@
   //
   // Theme & Appearance
   //
+  "outline_panel": {
+    "dock": "left"
+  },
   "theme": {
     "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark Dimmed"
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé - No Italics"
   },
   "icon_theme": "Material Icon Theme",
   // UI
@@ -43,7 +46,15 @@
   //
   // Other Features
   //
+  "base_keymap": "VSCode",
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
   }
 }
