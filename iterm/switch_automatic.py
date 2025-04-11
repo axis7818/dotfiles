@@ -7,6 +7,7 @@ import os
 # Light
 THEME_LIGHT_BACKGROUND = "Light Background"
 THEME_GITHUB_LIGHT_DEFAULT = "GitHub Light Default"
+THEME_CATPPUCCIN_LATTE = "catppuccin-latte"
 
 # Dark
 THEME_DARK_BACKGROUND = "Dark Background"
@@ -19,8 +20,8 @@ THEME_CATPPUCCIN_MOCHA = "catppuccin-mocha"
 THEME_GITHUB_DARK_DIMMED = "GitHub Dark Dimmed"
 
 # Pick themes
-LIGHT_THEME = THEME_CATPPUCCIN_FRAPPE
-DARK_THEME = THEME_CATPPUCCIN_MOCHA
+LIGHT_THEME = THEME_CATPPUCCIN_LATTE
+DARK_THEME = THEME_CATPPUCCIN_FRAPPE 
 
 
 async def changeTheme(theme_parts, connection):
