@@ -10,6 +10,12 @@
   //
   // Theme & Appearance
   //
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
@@ -36,7 +42,7 @@
   // Editor Behavior
   //
   "vim_mode": true,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "show_wrap_guides": true,
   "soft_wrap": "none",
 
@@ -47,11 +53,11 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "assistant": {
+  "agent": {
+    "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
-    },
-    "version": "2"
+      "model": "gpt-5.2"
+    }
   }
 }
