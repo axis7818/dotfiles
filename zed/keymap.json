@@ -68,5 +68,35 @@
     "bindings": {
       "g c": "editor::Rename"
     }
+  },
+  {
+    "context": "Workspace",
+      "bindings": {
+      "cmd-shift-o": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "cmd-shift-o": null
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "cmd-shift-o": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-b": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-?": "agent::ToggleFocus"
+    }
   }
 ]
