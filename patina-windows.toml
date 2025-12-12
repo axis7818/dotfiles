@@ -12,5 +12,5 @@ target = "~\\.gitconfig"
 tags = ["git"]
 [[files]]
 template = "lazygit\\config.yml"
-target = "C:\\Users\\axis7\\AppData\\Roaming\\lazygit\\config.yml"
+target = "C:\\Users\\axis7818\\AppData\\Local\\lazygit\\config.yml"
 tags = ["git"]
