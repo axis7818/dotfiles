@@ -1,0 +1,26 @@
+name = "axis7818 wsl dotfiles"
+description = "axis7818 dotfiles for WSL"
+
+[vars]
+me.first_name = "Cameron"
+me.last_name = "Taylor"
+
+# ZSH
+# [[files]]
+# template = "zsh/zshrc"
+# target = "~/.zshrc"
+# tags = ["shell"]
+[[files]]
+template = "zsh/custom/themes/axis7818.zsh-theme"
+target = "~/.oh-my-zsh/custom/themes/axis7818.zsh-theme"
+tags = ["shell"]
+
+# Git
+[[files]]
+template = "git/gitconfig"
+target = "~/.gitconfig"
+tags = ["git"]
+[[files]]
+template = "lazygit/config.yml"
+target = "~/.config/lazygit/config.yml"
+tags = ["git"]
