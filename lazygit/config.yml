@@ -12,8 +12,13 @@ gui:
   showNumstatInFilesView: true
 
 customCommands:
-- key: 'U'
-  command: 'git submodule update --init --recursive'
-  context: 'files, localBranches, status'
-  description: 'Update submodules'
-  stream: true
+  - key: "U"
+    command: "git submodule update --init --recursive"
+    context: "files, localBranches, status"
+    description: "Update submodules"
+    stream: true
+  - key: "C"
+    command: "~/.local/bin/claude-commit-msg.sh"
+    context: "files"
+    description: "Commit with Claude-generated message"
+    subprocess: true
