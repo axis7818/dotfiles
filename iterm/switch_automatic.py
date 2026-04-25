@@ -21,7 +21,7 @@ THEME_GITHUB_DARK_DIMMED = "GitHub Dark Dimmed"
 
 # Pick themes
 LIGHT_THEME = THEME_CATPPUCCIN_LATTE
-DARK_THEME = THEME_CATPPUCCIN_FRAPPE 
+DARK_THEME = THEME_CATPPUCCIN_MACCHIATO
 
 
 async def changeTheme(theme_parts, connection):
