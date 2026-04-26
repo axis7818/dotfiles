@@ -10,13 +10,13 @@
 	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="true"
 
 	# The theme to use.
-	export TMUX_POWERLINE_THEME="default"
+	export TMUX_POWERLINE_THEME="axis7818"
 	# Overlay directory to look for themes. There you can put your own themes outside the repo. Fallback will still be the "themes" directory in the repo.
 	export TMUX_POWERLINE_DIR_USER_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/themes"
 	# Overlay directory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
 	export TMUX_POWERLINE_DIR_USER_SEGMENTS="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/segments"
 
-	# The initial visibility of the status bar. Can be {"on", "off", "2"}. 2 will create two status lines: one for the window list and one with status bar segments. 
+	# The initial visibility of the status bar. Can be {"on", "off", "2"}. 2 will create two status lines: one for the window list and one with status bar segments.
 	export TMUX_POWERLINE_STATUS_VISIBILITY="on"
 	# In case of visibility = 2, where to display window status and where left/right status bars.
 	# 0: window status top, left/right status bottom; 1: window status bottom, left/right status top
@@ -26,7 +26,7 @@
 	export TMUX_POWERLINE_STATUS_INTERVAL="1"
 	# The location of the window list. Can be {"absolute-centre, centre, left, right"}.
 	# Note that "absolute-centre" is only supported on `tmux -V` >= 3.2.
-	export TMUX_POWERLINE_STATUS_JUSTIFICATION="centre"
+	export TMUX_POWERLINE_STATUS_JUSTIFICATION="left"
 
 	# The maximum length of the left status bar.
 	export TMUX_POWERLINE_STATUS_LEFT_LENGTH="60"
@@ -42,20 +42,20 @@
 	#export TMUX_POWERLINE_MUTE_RIGHT_KEYBINDING="C-]"
 # }
 
-# air.sh {
-	# The data provider to use. Currently only "openweather" is supported.
-	export TMUX_POWERLINE_SEG_AIR_DATA_PROVIDER="openweather"
-	# How often to update the weather in seconds.
-	export TMUX_POWERLINE_SEG_AIR_UPDATE_PERIOD="600"
-	# Location of the JSON parser, jq
-	export TMUX_POWERLINE_SEG_AIR_JSON="jq"
-	# Your location
-	# Latitude and Longitude:
-	TMUX_POWERLINE_SEG_AIR_LAT=""
-	TMUX_POWERLINE_SEG_AIR_LON=""
-	# Your Open Weather API Key:
-	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY=""
-# }
+# # air.sh {
+# 	# The data provider to use. Currently only "openweather" is supported.
+# 	export TMUX_POWERLINE_SEG_AIR_DATA_PROVIDER="openweather"
+# 	# How often to update the weather in seconds.
+# 	export TMUX_POWERLINE_SEG_AIR_UPDATE_PERIOD="600"
+# 	# Location of the JSON parser, jq
+# 	export TMUX_POWERLINE_SEG_AIR_JSON="jq"
+# 	# Your location
+# 	# Latitude and Longitude:
+# 	TMUX_POWERLINE_SEG_AIR_LAT=""
+# 	TMUX_POWERLINE_SEG_AIR_LON=""
+# 	# Your Open Weather API Key:
+# 	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY=""
+# # }
 
 # battery.sh {
 	# How to display battery remaining. Can be {percentage, cute}.
@@ -163,7 +163,7 @@
 # mailcount.sh {
 	# Mailbox type to use. Can be any of {apple_mail, gmail, maildir, mbox, mailcheck}
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MAILBOX_TYPE=""
-	
+
 	## Gmail
 	# Enter your Gmail username here WITH OUT @gmail.com.( OR @domain)
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_USERNAME=""
@@ -178,15 +178,15 @@
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_SERVER="gmail.com"
 	# How often in minutes to check for new mails.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_INTERVAL="5"
-	
+
 	## Maildir
 	# Path to the maildir to check.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MAILDIR_INBOX="/Users/cameron/.mail/inbox/new"
-	
+
 	## mbox
 	# Path to the mbox to check.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MBOX_INBOX=""
-	
+
 	## mailcheck
 	# Optional path to mailcheckrc
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MAILCHECKRC="/Users/cameron/.mailcheckrc"
@@ -233,7 +233,7 @@
 	# export TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_MODE="repeat"
 	# Separator for "repeat" roll mode
 	# export TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_SEPARATOR="   "
-	
+
 	# Hostname for MPD server in the format "[password@]host"
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_HOST="localhost"
 	# Port the MPD server is running on.
@@ -244,7 +244,7 @@
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLAYERCTL_FORMAT="{{ artist }} - {{ title }}"
 	# Song display format for rhythmbox. see "FORMATS" in rhythmbox-client(1).
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_RHYTHMBOX_FORMAT="%aa - %tt"
-	
+
 	# Last.fm
 	# Set up steps for Last.fm
 	# 1. Make sure jq(1) is installed on the system.
@@ -258,8 +258,8 @@
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_UPDATE_PERIOD="30"
 	# Fancy char to display before now playing track
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_NOTE_CHAR="♫"
-	
-	# Plexamp 
+
+	# Plexamp
 	# Set up steps for Plexamp
 	# 1. Make sure jq(1) is installed on the system.
 	# 2. Make sure you have an instance of Tautulli that is accessible by the computer running tmux-powerline.
@@ -295,7 +295,7 @@
 # tmux_session_info.sh {
 	# Session info format to feed into the command: tmux display-message -p
 	# For example, if FORMAT is '[ #S ]', the command is: tmux display-message -p '[ #S ]'
-	export TMUX_POWERLINE_SEG_TMUX_SESSION_INFO_FORMAT="#S:#I.#P"
+	export TMUX_POWERLINE_SEG_TMUX_SESSION_INFO_FORMAT="#S (#I.#P)"
 # }
 
 # utc_time.sh {

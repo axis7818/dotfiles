@@ -25,6 +25,10 @@ template = "tmux/config.sh"
 target = "~/.config/tmux-powerline/config.sh"
 tags = ["shell"]
 disable_templating = true
+[[files]]
+template = "tmux/themes/axis7818.sh"
+target = "~/.config/tmux-powerline/themes/axis7818.sh"
+tags = ["shell"]
 
 # iTerm
 [[files]]
