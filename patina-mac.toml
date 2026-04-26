@@ -20,6 +20,11 @@ tags = ["shell"]
 template = "tmux/tmux.conf"
 target = "~/.tmux.conf"
 tags = ["shell"]
+[[files]]
+template = "tmux/config.sh"
+target = "~/.config/tmux-powerline/config.sh"
+tags = ["shell"]
+disable_templating = true
 
 # iTerm
 [[files]]
