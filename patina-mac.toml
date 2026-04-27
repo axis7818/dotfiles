@@ -44,12 +44,12 @@ tags = ["git"]
 [[files]]
 template = "lazygit/config.yml"
 target = "~/Library/Application Support/lazygit/config.yml"
-tags = ["git"]
+tags = ["git", "lazygit"]
 [[files]]
 template = "lazygit/claude-commit-msg.sh"
 target = "~/.local/bin/claude-commit-msg.sh"
 preserve_permissions = true
-tags = ["git"]
+tags = ["git", "lazygit"]
 
 # Vim
 [[files]]
