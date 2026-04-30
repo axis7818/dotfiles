@@ -23,8 +23,8 @@
       "ctrl-shift-h": "workspace::SwapPaneLeft",
       "ctrl-shift-l": "workspace::SwapPaneRight",
       "ctrl-shift-k": "workspace::SwapPaneUp",
-      "ctrl-shift-j": "workspace::SwapPaneDown"
-    }
+      "ctrl-shift-j": "workspace::SwapPaneDown",
+    },
   },
   {
     "context": "Pane",
@@ -50,8 +50,8 @@
       "ctrl-6": ["workspace::ActivatePane", 5],
       "ctrl-7": ["workspace::ActivatePane", 6],
       "ctrl-8": ["workspace::ActivatePane", 7],
-      "ctrl-9": ["workspace::ActivatePane", 8]
-    }
+      "ctrl-9": ["workspace::ActivatePane", 8],
+    },
   },
   {
     "context": "Editor",
@@ -60,43 +60,48 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
     "context": "vim_mode == normal",
     "bindings": {
-      "g c": "editor::Rename"
-    }
+      "g c": "editor::Rename",
+      "g d": "editor::GoToDefinition",
+      "g r": "editor::GoToDefinition",
+      "g n": "editor::GoToNextReference",
+      "g p": "editor::GoToPreviousReference",
+    },
   },
   {
     "context": "Workspace",
-      "bindings": {
-      "cmd-shift-o": "outline_panel::ToggleFocus"
-    }
+    "bindings": {
+      "cmd-shift-o": "outline_panel::ToggleFocus",
+      "cmd-shift-g": "git_panel::ToggleFocus",
+    },
   },
   {
     "context": "(Editor && mode == full)",
     "bindings": {
-      "cmd-shift-o": null
-    }
+      "cmd-shift-o": null,
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
-      "cmd-shift-o": null
-    }
+      "cmd-shift-o": null,
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-b": null
-    }
+      "cmd-shift-b": null,
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-?": "agent::ToggleFocus"
-    }
-  }
+      "cmd-?": "agent::ToggleFocus",
+    },
+  },
 ]

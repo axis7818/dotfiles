@@ -10,32 +10,67 @@
   //
   // Theme & Appearance
   //
+  "active_pane_modifiers": {
+    "inactive_opacity": 0.7,
+  },
+  "centered_layout": {
+    "left_padding": 0.2,
+  },
+  "bottom_dock_layout": "right_aligned",
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": false,
+    "show": true,
+  },
+  "title_bar": {
+    "show_branch_status_icon": true,
+  },
+  "agent_ui_font_size": 14.0,
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "git_panel": {
+    "dock": "right",
+  },
   "collaboration_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "project_panel": {
-    "dock": "right"
+    "folder_icons": true,
+    "file_icons": true,
+    "button": true,
+    "dock": "right",
   },
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé - No Italics"
+    "dark": "Catppuccin Frappé",
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé",
+  },
   // UI
-  "ui_font_size": 13,
+  "ui_font_size": 14.0,
   "ui_font_family": "Hack Nerd Font",
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
   // Buffers
-  "buffer_font_size": 12,
+  "buffer_font_size": 13.0,
   "buffer_font_family": "Hack Nerd Font",
   "buffer_line_height": "comfortable",
   // Terminal
   "terminal": {
-    "line_height": "standard"
+    "line_height": "standard",
   },
 
   //
@@ -50,14 +85,4 @@
   // Other Features
   //
   "base_keymap": "VSCode",
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
-  "agent": {
-    "dock": "left",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5.2"
-    }
-  }
 }
