@@ -1,0 +1,25 @@
+################################################################################
+# Ghostty Configuration Reference
+#   https://ghostty.org/docs/config/reference
+#   https://ghostty.org/docs/config/keybind/reference
+#
+# Reload configuration with `cmd+shift+,`
+
+################################################################################
+# Theme & Color
+theme = dark:Catppuccin Mocha,light:Catppuccin Frappe
+background-opacity = 0.9
+background-blur = 20
+
+## Font
+font-family = "Hack Nerd Font"
+font-size = 13
+
+## Quick Terminal
+quick-terminal-position = center
+quick-terminal-size = 32%,46%
+quick-terminal-animation-duration = 0.1
+
+################################################################################
+# Keybindings
+keybind = global:opt+space=toggle_quick_terminal

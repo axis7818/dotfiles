@@ -34,7 +34,13 @@ tags = ["shell", "tmux"]
 [[files]]
 template = "iterm/switch_automatic.py"
 target = "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/switch_automatic.py"
-tags = ["terminal"]
+tags = ["terminal", "iterm"]
+
+# Ghostty
+[[files]]
+template = "ghostty/config.ghostty"
+target = "~/.config/ghostty/config.ghostty"
+tags = ["terminal", "ghostty"]
 
 # Git
 [[files]]
