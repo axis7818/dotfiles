@@ -104,4 +104,76 @@
       "cmd-?": "agent::ToggleFocus",
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-\\": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-]": "editor::Indent",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-]": "pane::SplitRight",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-\\": "pane::SplitRight",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-\\": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-r": "workspace::ToggleRightDock",
+    },
+  },
+  // Use `tab` and `shift+tab` to navigate the context menu
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "shift-tab": "editor::ContextMenuPrevious",
+      "ctrl-p": "editor::ContextMenuPrevious",
+      "tab": "editor::ContextMenuNext",
+      "ctrl-n": "editor::ContextMenuNext",
+      "pageup": "editor::ContextMenuFirst",
+      "pagedown": "editor::ContextMenuLast",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-cmd-\\": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "cmd-shift-g": "search::SelectPreviousMatch"
+    }
+  }
 ]
