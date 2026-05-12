@@ -4,6 +4,8 @@ brew "fd"
 brew "ffmpeg-full", link: true
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Git extension for versioning large files
+brew "git-lfs"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick-full", link: true
 # Lightweight and flexible command-line JSON processor
@@ -34,6 +36,8 @@ cask "alt-tab"
 cask "bitwarden"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Voice and text chat software
 cask "discord"
 cask "font-symbols-only-nerd-font"
