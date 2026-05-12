@@ -57,6 +57,8 @@ cask "rectangle-pro"
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
+# Video game digital distribution service
+cask "steam"
 # Multiplayer code editor
 cask "zed"
 cargo "dotpatina"
