@@ -1,5 +1,11 @@
 # Mac OS Setup
 
+This file contains helpful setup instructions for a new mac.
+
+See [brew-list](./brew-list) for a list of installed brew formulae and casks.
+
+## MacOS Settings
+
 These are a few helpful commands to configure Mac OS settings.
 
 ```bash

@@ -1,0 +1,7 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+[
+  {
+    "label": "save brew list",
+    "command": "brew list --verbose > brew-list",
+  },
+]
