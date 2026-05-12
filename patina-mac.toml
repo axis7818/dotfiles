@@ -30,12 +30,6 @@ template = "tmux/powerline-themes/axis7818.sh"
 target = "~/.config/tmux-powerline/themes/axis7818.sh"
 tags = ["shell", "tmux"]
 
-# iTerm
-[[files]]
-template = "iterm/switch_automatic.py"
-target = "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/switch_automatic.py"
-tags = ["terminal", "iterm"]
-
 # Ghostty
 [[files]]
 template = "ghostty/config.ghostty"

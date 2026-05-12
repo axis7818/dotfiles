@@ -1,0 +1,14 @@
+# Mac OS Setup
+
+These are a few helpful commands to configure Mac OS settings.
+
+```bash
+# Enable key repeat on hold
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Disable the dock autohide animation
+defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+
+# or optionally, set a shorter animation duration
+defaults write com.apple.dock autohide-time-modifier -float 0.1; killall Dock
+```
