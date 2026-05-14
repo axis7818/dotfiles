@@ -10,11 +10,10 @@ These are a few helpful commands to configure Mac OS settings.
 # Enable key repeat on hold
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-# Disable the dock autohide animation
-defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
-
-# or optionally, set a shorter animation duration
-defaults write com.apple.dock autohide-time-modifier -float 0.1; killall Dock
+# Speed up the dock autohide animation
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.05
+killall Dock
 ```
 
 ## Homebrew
