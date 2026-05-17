@@ -10,9 +10,15 @@
   //
   // Theme & Appearance
   //
+  "cli_default_open_behavior": "new_window",
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "show_whitespaces": "all",
-  "diff_view_style": "split",
-  "agent_buffer_font_size": 13.0,
+  "diff_view_style": "unified",
+  "agent_buffer_font_size": 12.0,
   "unnecessary_code_fade": 0.3,
   "centered_layout": {
     "left_padding": 0.2,
@@ -33,11 +39,11 @@
     },
   },
   "outline_panel": {
-    "dock": "right",
+    "dock": "left",
   },
   "git_panel": {
     "tree_view": true,
-    "dock": "right",
+    "dock": "left",
   },
   "collaboration_panel": {
     "dock": "right",
@@ -46,7 +52,7 @@
     "folder_icons": true,
     "file_icons": true,
     "button": true,
-    "dock": "right",
+    "dock": "left",
   },
   "theme": {
     "mode": "system",
@@ -66,18 +72,19 @@
     "git_status": true,
   },
   // Buffers
-  "buffer_font_size": 13.0,
+  "buffer_font_size": 12.0,
   "buffer_font_family": "Hack Nerd Font",
   "buffer_line_height": "standard",
   // Terminal
   "terminal": {
+    "font_size": 12.0,
     "line_height": "standard",
   },
 
   //
   // Editor Behavior
   //
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "vim_mode": true,
   "relative_line_numbers": "enabled",
   "show_wrap_guides": true,

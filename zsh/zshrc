@@ -119,3 +119,10 @@ lg()
             rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
     fi
 }
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/cameron/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# Pyenv init
+eval "$(pyenv init -)"

@@ -5,15 +5,18 @@
 #
 # Reload configuration with `cmd+shift+,`
 
+# Don't confirm `cmd-Q` quit
+confirm-close-surface = false
+
 ################################################################################
 # Theme & Color
-theme = dark:Catppuccin Mocha,light:Catppuccin Frappe
-background-opacity = 0.9
+theme = dark:Catppuccin Macchiato,light:Catppuccin Macchiato
+background-opacity = 1.0
 background-blur = 20
 
 ## Font
 font-family = "Hack Nerd Font"
-font-size = 13
+font-size = 12
 
 ## Quick Terminal
 quick-terminal-position = center
