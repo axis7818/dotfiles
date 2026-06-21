@@ -26,8 +26,12 @@ target = "~/.config/tmux-powerline/config.sh"
 tags = ["shell", "tmux"]
 disable_templating = true
 [[files]]
-template = "tmux/powerline-themes/axis7818.sh"
-target = "~/.config/tmux-powerline/themes/axis7818.sh"
+template = "tmux/powerline-themes/catppuccin.sh"
+target = "~/.config/tmux-powerline/themes/catppuccin.sh"
+tags = ["shell", "tmux"]
+[[files]]
+template = "tmux/powerline-themes/everforest.sh"
+target = "~/.config/tmux-powerline/themes/everforest.sh"
 tags = ["shell", "tmux"]
 
 # Ghostty
