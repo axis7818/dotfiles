@@ -14,6 +14,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.05
 killall Dock
+
+# Reduce space between menu bar items (requires logout/login to take effect)
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
 ```
 
 ## Homebrew
