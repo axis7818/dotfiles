@@ -14,7 +14,7 @@
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "show_whitespaces": "all",
   "diff_view_style": "unified",
@@ -56,13 +56,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé",
-  },
-  "icon_theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé",
+    "light": "Everforest Dark Soft (blur)",
+    "dark": "Everforest Dark Hard (blur)",
   },
   // UI
   "ui_font_size": 14.0,
