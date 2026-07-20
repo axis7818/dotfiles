@@ -126,3 +126,7 @@ export PATH="$PATH:/Users/cameron/.lmstudio/bin"
 
 # Pyenv init
 eval "$(pyenv init -)"
+
+# Rebind '^L' to '^O'
+bindkey -r '^L'
+bindkey '^O' clear-screen
